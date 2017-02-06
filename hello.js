@@ -17,4 +17,6 @@ var m5 = require('./modules/test.js');
 // 在这个global对象下有一个exports对象。
 //  console.log( m5)
 
-console.log(__filename)
+// console.log(__filename)
+
+console.log(global.process==process)
