@@ -1,21 +1,17 @@
 {
-  "name": "app",
-  "version": "1.0.0",
-  "description": "learning nodeJs",
-  "main": "app.js",
-  "dependencies": {},
-  "devDependencies": {},
+  "name": "nodejs-learn",
+  "version": "0.0.0",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node ./bin/www"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/sundan1993/nodeJs-learn.git"
-  },
-  "author": "sd",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/sundan1993/nodeJs-learn/issues"
-  },
-  "homepage": "https://github.com/sundan1993/nodeJs-learn#readme"
+  "dependencies": {
+    "body-parser": "~1.16.0",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.0",
+    "ejs": "~2.5.5",
+    "express": "~4.14.1",
+    "morgan": "~1.7.0",
+    "serve-favicon": "~2.3.2"
+  }
 }
