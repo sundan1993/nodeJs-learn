@@ -6,8 +6,13 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
 var index = require('./routes/index');
-var users = require('./routes/users');
-var time = require('./routes/time');
+// var user = require('./routes/user');
+// var post = require('./routes/post')
+// var reg = require('./routes/reg');
+// var doReg = require('./routes/doReg');
+// var login = require('./routes/login');
+// var doLogin = require('./routes/doLogin');
+// var logout = require('./routes/logout');
 
 var app = express();
 
@@ -25,8 +30,13 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public'))); // 配置静态文件服务器
 
 app.use('/', index);
-app.use('/users', users);
-app.use('/time', time);
+// app.use('/user/:u', user);
+// app.post('/post', post);
+// app.get('/reg', reg);
+// app.post('/doReg', doReg);
+// app.get('/login', login);
+// app.post('/doLogin', doLogin);
+// app.get('/logout', logout);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
